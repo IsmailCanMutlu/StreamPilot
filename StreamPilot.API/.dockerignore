@@ -1,0 +1,16 @@
+# Build outputs
+bin/
+obj/
+
+# Git directory and files
+.git/
+.gitignore
+
+# Configuration files
+appsettings.Development.json
+appsettings.Production.json
+
+# Other unnecessary files
+README.md
+LICENSE
+.DS_Store
