@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.UI/StreamPilot.UI.csproj": {}
+    "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.UI/StreamPilot.UI.csproj": {}
   },
   "projects": {
-    "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.UI/StreamPilot.UI.csproj": {
+    "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.UI/StreamPilot.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.UI/StreamPilot.UI.csproj",
+        "projectUniqueName": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.UI/StreamPilot.UI.csproj",
         "projectName": "StreamPilot.UI",
-        "projectPath": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.UI/StreamPilot.UI.csproj",
+        "projectPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.UI/StreamPilot.UI.csproj",
         "packagesPath": "/Users/ismailcanmutlu/.nuget/packages/",
-        "outputPath": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.UI/obj/",
+        "outputPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.UI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ismailcanmutlu/.nuget/NuGet/NuGet.Config"

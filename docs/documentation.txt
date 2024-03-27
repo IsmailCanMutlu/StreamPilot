@@ -1,0 +1,67 @@
+** Api/Business **
+1 Bir endpoint üzerinden configürasyonların keyValue pair üzerinden açılması lazım.
+ 1.1 Kabul ettiğimiz json boyutu 10 mb den büyük olamaz.
+ 
+2 Data kayıt edilirken Key defaulta guide tutulacak, aynı zamanda kendisi de key yazıp gönderebilir(keyin kontrolünü sağlamalıyız).
+  2.1 Key gönderirken belirli bir formatımız olması lazım. Örneğin : "app-future.properities"
+  2.2 Kullanıcıdan kabul edilecek key de sadece char, digit, underscor, ve dot olacak. !Lethers will be only english!
+  
+3 Value raw json  olarak kabul edilecek. Bizim tarafımızda da white sapaceler kaldırılacak. Kendi tarafımıza alıp atacağız.
+Bu json requestin body kısmında gelmeli. Key de query stringden gönderilmeli. key (optional)
+
+4 Bu kaydettiğimiz veri key üzerinden sorgulandığında value neyse onu göndermemiz lazım. Bu da ikinci endpointimiz(get)
+
+5 Sistem her zaman json üzerinden çalışacak, aynı zamanda byte response gönderme işlemide desteklenecek. Bunun için request 
+headerda value göndermesi lazım ona göre byte olarak alma seçeneği sunacağız.
+
+6 Bir get metodu daha sunulacak. Field properisi istenilip istenilen properilerde sunulacak.
+Örnek: "https://restcountries.com/v3.1/independent?status=true&fields=languages,currencies,name"
+
+7 Bütün entties e "isdeleted" "isactive" boolean properitieleri eklenmeli.
+
+8 Sistem içerisinde hard delete olmayacak. Hard delete sadece adminlere verilecek
+
+9 Output cache kullanacağız bunda da key ve value nin kendisini saklıyacağız. Response cache kullanmalıyız.
+Response cache --> 5 sn
+Output cache --> 1 saat Not: Output cache Şuan inmemory üzerinden çalışacak
+* output cache entegre : https://learn.microsoft.com/en-us/aspnet/core/performance/caching/output?view=aspnetcore-8.0
+* https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services?view=aspnetcore-8.0&tabs=visual-studio
+
+10 Update ve delete işlemlerinde cache'i updatelemek lazım. 
+* https://www.codementor.io/@riza/implementation-of-response-cache-in-net-8-2dm0z1e6ea
+Data update işleminde hashleme işlemi yapılmalı.
+
+11 Usera external id atanmalı
+
+** UI **
+
+1 Sisteme login olunacak. Login tablosu olacak. Login olunduğunda refresh token üretilip o token üzerinden kullanıcılar getirilecek.
+
+2 Search imkanı sunulması gerekiyor.
+
+3 Signup olacak (mevcut şirket hasabı ile) SSO desteği sunulması lazım. Ama bu site açıldığında değil.
+Google, Github desteği olacak signupda.
+
+4 Signup confirmation email olmalı. 
+
+5 Logout olmalı
+
+6 Forget password, change password ve reset password adında 3 tane endpoint olmalı.
+
+7 Refresh ve revoke token desteği olmalı. (token defaul ömrü 10 min / bir token maksimum 1 gün kullanılabilecek)
+token pars edilirken differance valid ele alınmalı. Bir günlük değer configure edilebilmeli.
+
+** Tech Stacks **
+
+* C# .Net8 RestApi
+* PostgreSql
+* Inmemory cache
+* SeriLog
+* Fluent validation
+* Polly
+* Jwt
+
+** !Son aşamada eklenilecekler! **
+
+* Email validation tool kullanılmalı 
+* Google Authenticatior desteği kullanılacak

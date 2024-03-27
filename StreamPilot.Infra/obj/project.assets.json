@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Infra/StreamPilot.Infra.csproj",
+      "projectUniqueName": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Infra/StreamPilot.Infra.csproj",
       "projectName": "StreamPilot.Infra",
-      "projectPath": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Infra/StreamPilot.Infra.csproj",
+      "projectPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Infra/StreamPilot.Infra.csproj",
       "packagesPath": "/Users/ismailcanmutlu/.nuget/packages/",
-      "outputPath": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Infra/obj/",
+      "outputPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Infra/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ismailcanmutlu/.nuget/NuGet/NuGet.Config"

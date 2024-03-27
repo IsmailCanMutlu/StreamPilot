@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Admin/StreamPilot.Admin.csproj",
+      "projectUniqueName": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Admin/StreamPilot.Admin.csproj",
       "projectName": "StreamPilot.Admin",
-      "projectPath": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Admin/StreamPilot.Admin.csproj",
+      "projectPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Admin/StreamPilot.Admin.csproj",
       "packagesPath": "/Users/ismailcanmutlu/.nuget/packages/",
-      "outputPath": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Admin/obj/",
+      "outputPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Admin/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ismailcanmutlu/.nuget/NuGet/NuGet.Config"

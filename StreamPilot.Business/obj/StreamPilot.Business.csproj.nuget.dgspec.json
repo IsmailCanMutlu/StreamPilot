@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Business/StreamPilot.Business.csproj": {}
+    "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Business/StreamPilot.Business.csproj": {}
   },
   "projects": {
-    "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Business/StreamPilot.Business.csproj": {
+    "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Business/StreamPilot.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Business/StreamPilot.Business.csproj",
+        "projectUniqueName": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Business/StreamPilot.Business.csproj",
         "projectName": "StreamPilot.Business",
-        "projectPath": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Business/StreamPilot.Business.csproj",
+        "projectPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Business/StreamPilot.Business.csproj",
         "packagesPath": "/Users/ismailcanmutlu/.nuget/packages/",
-        "outputPath": "/Users/ismailcanmutlu/RiderProjects/StreamPilot/StreamPilot.Business/obj/",
+        "outputPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Business/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ismailcanmutlu/.nuget/NuGet/NuGet.Config"
