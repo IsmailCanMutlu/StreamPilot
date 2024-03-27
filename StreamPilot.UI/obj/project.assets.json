@@ -8,25 +8,32 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/ismailcanmutlu/.nuget/packages/": {}
+    "C:\\Users\\See\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.UI/StreamPilot.UI.csproj",
+      "projectUniqueName": "E:\\_Devonshire\\StreamPilot\\StreamPilot.UI\\StreamPilot.UI.csproj",
       "projectName": "StreamPilot.UI",
-      "projectPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.UI/StreamPilot.UI.csproj",
-      "packagesPath": "/Users/ismailcanmutlu/.nuget/packages/",
-      "outputPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.UI/obj/",
+      "projectPath": "E:\\_Devonshire\\StreamPilot\\StreamPilot.UI\\StreamPilot.UI.csproj",
+      "packagesPath": "C:\\Users\\See\\.nuget\\packages\\",
+      "outputPath": "E:\\_Devonshire\\StreamPilot\\StreamPilot.UI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/ismailcanmutlu/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\See\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/selmaneekici/JackPotDemo/_packaging/JackPotDemoFeed/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
@@ -38,6 +45,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -62,7 +74,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
