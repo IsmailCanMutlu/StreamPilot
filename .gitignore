@@ -443,3 +443,17 @@ obj/
 packages/
 .vs/
 
+/StreamPilot.UI/obj/Debug/net8.0/StreamPilot.UI.AssemblyInfo.cs
+/StreamPilot.UI/obj/Debug/net8.0/StreamPilot.UI.AssemblyInfoInputs.cache
+/StreamPilot.Infra/obj/Debug/net8.0/StreamPilot.Infra.AssemblyInfo.cs
+/StreamPilot.Data/obj/Debug/net8.0/StreamPilot.Data.AssemblyInfoInputs.cache
+/StreamPilot.Admin/obj/Debug/net8.0/StreamPilot.Admin.AssemblyInfo.cs
+/StreamPilot.Admin/obj/Debug/net8.0/StreamPilot.Admin.AssemblyInfoInputs.cache
+/StreamPilot.API/obj/Debug/net8.0/StreamPilot.API.AssemblyInfo.cs
+/StreamPilot.API/obj/Debug/net8.0/StreamPilot.API.AssemblyInfoInputs.cache
+/StreamPilot.API/obj/Debug/net8.0/StreamPilot.API.assets.cache
+/StreamPilot.API/obj/project.assets.json
+/StreamPilot.API/obj/project.nuget.cache
+/StreamPilot.API/obj/StreamPilot.API.csproj.nuget.dgspec.json
+/StreamPilot.API/obj/StreamPilot.API.csproj.nuget.g.props
+/StreamPilot.API/obj/StreamPilot.API.csproj.nuget.g.targets
