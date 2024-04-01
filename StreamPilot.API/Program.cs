@@ -1,13 +1,27 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using StreamPilot.Api.Configurations;
+using StreamPilot.Api.Interceptors;
 using StreamPilot.Data.Context;
+using StreamPilot.API.Services;
+using StreamPilot.Api.Utilities;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
 
 builder.Services.AddDbContext<StreamPilotDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("StreamPilotDatabase")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("StreamPilotDatabase")) 
+        .AddInterceptors(new SlowQueryInterceptor()));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
+builder.Services.AddScoped<IConfigurationService, ConfigurationService>();
+builder.Services.Configure<FileManager>(options =>
+    {
+        builder.Configuration.GetSection(nameof(FileManager)).Bind(options);
+    })
+    .AddSingleton<IValidateOptions<FileManager>, FileManagerValidation>();
 
 var app = builder.Build();
 

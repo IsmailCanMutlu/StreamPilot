@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\_Devonshire\\StreamPilot\\StreamPilot.Data\\StreamPilot.Data.csproj": {}
+    "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Data/StreamPilot.Data.csproj": {}
   },
   "projects": {
-    "E:\\_Devonshire\\StreamPilot\\StreamPilot.Data\\StreamPilot.Data.csproj": {
+    "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Data/StreamPilot.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\_Devonshire\\StreamPilot\\StreamPilot.Data\\StreamPilot.Data.csproj",
+        "projectUniqueName": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Data/StreamPilot.Data.csproj",
         "projectName": "StreamPilot.Data",
-        "projectPath": "E:\\_Devonshire\\StreamPilot\\StreamPilot.Data\\StreamPilot.Data.csproj",
-        "packagesPath": "C:\\Users\\See\\.nuget\\packages\\",
-        "outputPath": "E:\\_Devonshire\\StreamPilot\\StreamPilot.Data\\obj\\",
+        "projectPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Data/StreamPilot.Data.csproj",
+        "packagesPath": "/Users/ismailcanmutlu/.nuget/packages/",
+        "outputPath": "/Users/ismailcanmutlu/Documents/GitHub/StreamPilot/StreamPilot.Data/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\See\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ismailcanmutlu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/selmaneekici/JackPotDemo/_packaging/JackPotDemoFeed/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -38,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -88,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
