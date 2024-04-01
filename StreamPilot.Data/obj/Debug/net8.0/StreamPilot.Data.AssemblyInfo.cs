@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StreamPilot.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be366093966c4678440c22e9f786333d890edd32")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1acb3052916ee608b01d558a1ae1100cb02bb61b")]
 [assembly: System.Reflection.AssemblyProductAttribute("StreamPilot.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StreamPilot.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

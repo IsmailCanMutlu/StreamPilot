@@ -1,6 +1,6 @@
 namespace StreamPilot.Data.Models;
 
-public class UserToken
+public class Token
 {
     public int Id { get; set; }
     public int UserId { get; set; }
@@ -8,5 +8,5 @@ public class UserToken
     public string RefreshToken { get; set; }
     public DateTime ExpiryDate { get; set; }
 
-    public virtual User User { get; set; }
+    public virtual Users User { get; set; }
 }
