@@ -5,6 +5,9 @@ using StreamPilot.Api.Interceptors;
 using StreamPilot.Data.Context;
 using StreamPilot.API.Services;
 using StreamPilot.Api.Utilities;
+using StreamPilot.Data.Repositories;
+using StreamPilot.Data.Interfaces;
+using StreamPilot.Data.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +20,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IConfigurationService, ConfigurationService>();
+builder.Services.AddScoped<IRepository<Configuration>, ConfigurationRepository>();
 builder.Services.Configure<FileManager>(options =>
     {
         builder.Configuration.GetSection(nameof(FileManager)).Bind(options);

@@ -15,4 +15,8 @@
       <None Remove="Services\**" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\StreamPilot.API\StreamPilot.API.csproj" />
+    </ItemGroup>
+
 </Project>

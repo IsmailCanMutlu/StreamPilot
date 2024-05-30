@@ -2,8 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using MessagePack;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
-using StreamPilot.Data.Context; 
-using StreamPilot.Data.Models; 
+using StreamPilot.Data.Context;
+using StreamPilot.Data.Models;
+
 
 namespace StreamPilot.Api.Controllers
 {
@@ -12,6 +13,7 @@ namespace StreamPilot.Api.Controllers
     public class ConfigurationController : ControllerBase
     {
         private readonly StreamPilotDbContext _context;
+        private const int _maxJsonSizeInBytes = 10 * 1024 * 1024; // 10 MB
 
         public ConfigurationController(StreamPilotDbContext context)
         {
@@ -21,15 +23,21 @@ namespace StreamPilot.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> SaveConfiguration([FromBody] byte[] data, [FromQuery] string key = null)
         {
+            // JSON size control
+            if (data.Length > _maxJsonSizeInBytes)
+            {
+                return BadRequest("JSON data exceeds the 10 MB limit.");
+            }
+
             try
             {
                 // Deserialize from MessagePack
-                var configData = MessagePackSerializer.Deserialize<Dictionary<string, object>>(data);
+                var configData = DeserializeConfigData(data);
 
                 // Key and Data control
                 key = ValidateAndGenerateKey(key);
 
-                // Serialize the data and save it
+                // Save the configuration data
                 await SaveConfigDataAsync(key, configData);
 
                 return Ok(new { key });
@@ -54,6 +62,11 @@ namespace StreamPilot.Api.Controllers
             return Ok(data);
         }
 
+        private Dictionary<string, object> DeserializeConfigData(byte[] data)
+        {
+            return MessagePackSerializer.Deserialize<Dictionary<string, object>>(data);
+        }
+
         private string ValidateAndGenerateKey(string key)
         {
             if (string.IsNullOrEmpty(key))
@@ -76,18 +89,23 @@ namespace StreamPilot.Api.Controllers
                 DataValue = MessagePackSerializer.Serialize(configData) // Serialize the data and save it
             };
 
-            _context.DataItems.Add(configItem);
+            var existingItem = await _context.DataItems.FirstOrDefaultAsync(item => item.DataKey == key);
+            if (existingItem != null)
+            {
+                existingItem.DataValue = configItem.DataValue;
+                _context.DataItems.Update(existingItem);
+            }
+            else
+            {
+                _context.DataItems.Add(configItem);
+            }
+
             await _context.SaveChangesAsync();
         }
 
         private async Task<DataItem> GetConfigDataItemAsync(string key)
         {
             return await _context.DataItems.FirstOrDefaultAsync(item => item.DataKey == key);
-        }
-
-        private Dictionary<string, object> DeserializeConfigData(byte[] data)
-        {
-            return MessagePackSerializer.Deserialize<Dictionary<string, object>>(data);
         }
     }
 }

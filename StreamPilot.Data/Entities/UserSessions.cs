@@ -12,10 +12,7 @@ public class UserSessions
     public DateTime RefreshTokenExpiration { get; set; }
     public bool IsActiveSession { get; set; }
     public DateTime CreatedOnUtc { get; set; } = DateTime.UtcNow;
-<<<<<<< HEAD
     public DateTime? SessionExpired { get; set; }
     // get info from user ip 
-=======
     public DateTime? ModifiedOnUtc { get; set; }
->>>>>>> origin/main
 }

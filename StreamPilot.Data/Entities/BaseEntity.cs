@@ -7,3 +7,8 @@ public abstract class BaseEntity
     public long? ModifiedBy { get; set; }
     public DateTime? ModifiedOnUtc { get; set; }
 }
+public class Configuration : BaseEntity
+{
+    public string Key { get; set; }
+    public byte[] Value { get; set; }
+}
