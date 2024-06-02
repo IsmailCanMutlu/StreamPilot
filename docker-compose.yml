@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_DB: stream_pilot_db
       POSTGRES_USER: stream_pilot_user
-      POSTGRES_PASSWORD: your_password
+      POSTGRES_PASSWORD: admin123
     ports:
       - "5432:5432"
     volumes:
@@ -18,7 +18,7 @@ services:
     ports:
       - "5000:80"
     environment:
-      - ConnectionStrings__StreamPilotDatabase=Host=postgres;Port=5432;Database=stream_pilot_db;Username=stream_pilot_user;Password=your_password;
+      - ConnectionStrings__StreamPilotDatabase=Host=postgres;Port=5432;Database=stream_pilot_db;Username=stream_pilot_user;Password=admin123;
   
   streampilot.admin:
     build:

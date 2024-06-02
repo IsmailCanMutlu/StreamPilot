@@ -1,4 +1,4 @@
-namespace StreamPilot.API.Services
+/*namespace StreamPilot.API.Services
 {
     public interface IConfigurationService
     {
@@ -7,3 +7,4 @@ namespace StreamPilot.API.Services
     }
 
 }
+*/

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StreamPilot.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cf1621ff8e425171d485386b30b7db4437dd071")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c80ab2e3d3a40f0e05baa1b2acb64ad4468b0602")]
 [assembly: System.Reflection.AssemblyProductAttribute("StreamPilot.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StreamPilot.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

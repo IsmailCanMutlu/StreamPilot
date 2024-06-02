@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+/*using Microsoft.EntityFrameworkCore;
 using StreamPilot.Data.Context; 
 using StreamPilot.Data.Models;
 using System.Text;
@@ -50,3 +50,4 @@ namespace StreamPilot.API.Services
         }
     }
 }
+ */
